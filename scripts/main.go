@@ -377,7 +377,7 @@ func (app *App) displayInstallStatus() {
 		fmt.Println("📦 安装状态: ✅ 已安装")
 		fmt.Printf("🔄 自动更新: %s\n", formatBool(status.AutoUpdate))
 		if status.AutoUpdate {
-			fmt.Printf("⏱️  更新间隔: %d 小时\n", status.UpdateInterval)
+			fmt.Printf("⏱️  更新间隔: %d 分钟\n", status.UpdateInterval)
 		}
 		fmt.Printf("🕒 上次更新: %s\n", status.LastUpdate)
 		fmt.Printf("📌 程序版本: %s\n", status.Version)
